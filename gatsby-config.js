@@ -1,37 +1,33 @@
+require('dotenv').config();
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `The Store Project | Create an Ecommerce Store in One Click`,
+    name: `The Store Project`,
+    siteUrl: `https://thestoreproject.com/blog/`,
+    description: `The easiest way to create an Ecommerce store and website`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `The Store Project | Blog`,
       maxWidth: 652,
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/narative`,
-      },
-      {
-        name: `github`,
-        url: `https://github.com/narative`,
+        url: `https://twitter.com/thestoreproject`,
       },
       {
         name: `instagram`,
-        url: `https://instagram.com/narative.co`,
-      },
-      {
-        name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
-      },
-      {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        url: `https://instagram.com/the.store.project`,
       },
     ],
   },
   plugins: [
+    {
+    resolve: 'gatsby-source-contentful',
+    options: {
+      spaceId: process.env.CONTENTFUL_SPACE_ID,
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    },
+    },
     {
       resolve: "@narative/gatsby-theme-novela",
       options: {
@@ -40,8 +36,8 @@ module.exports = {
         basePath: "/",
         authorsPage: true,
         sources: {
-          local: true,
-          // contentful: true,
+          //local: true,
+          contentful: true,
         },
       },
     },
@@ -55,11 +51,6 @@ module.exports = {
         theme_color: `#fff`,
         display: `standalone`,
         icon: `src/assets/favicon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
       },
     },
   ],

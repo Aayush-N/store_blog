@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
     "clean": "gatsby clean",
+    "serve": "gatsby serve --prefix-paths"
     "proxy": "netlify-cms-proxy-server"
   },
   "dependencies": {

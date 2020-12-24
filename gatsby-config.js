@@ -20,6 +20,7 @@ module.exports = {
       },
     ],
   },
+  pathPrefix: `/blog`,
   plugins: [
     {
     resolve: 'gatsby-source-contentful',

@@ -8,7 +8,7 @@
     "dev": "gatsby develop",
     "clean": "gatsby clean",
     "serve": "gatsby serve --prefix-paths",
-    "proxy": "netlify-cms-proxy-server"
+    "move": "cd public && mkdir blog | mv * blog"
   },
   "dependencies": {
     "@narative/gatsby-theme-novela": "^0.*",

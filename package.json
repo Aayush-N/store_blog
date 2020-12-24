@@ -7,7 +7,7 @@
     "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
     "clean": "gatsby clean",
-    "serve": "gatsby serve --prefix-paths"
+    "serve": "gatsby serve --prefix-paths",
     "proxy": "netlify-cms-proxy-server"
   },
   "dependencies": {

@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "dev": "gatsby develop --prefix-paths",
     "clean": "gatsby clean",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --prefix-paths",
     "move": "cd public && mkdir blog | mv * blog"
   },
   "dependencies": {

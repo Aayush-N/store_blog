@@ -1,5 +1,6 @@
 require('dotenv').config();
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: `The Store Project | Create an Ecommerce Store in One Click`,
     name: `The Store Project`,
